@@ -1,0 +1,59 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #00387f;
+    color: #ffffff;
+    height: 300px;
+}
+
+hgroup {
+    text-align: center;
+    padding: 4%;
+}
+
+div.logo {
+    height: 260px;
+}
+
+
+/* ------------------------------- 네비게이션 스타일 */
+
+nav {
+    height: 40px;
+    background-color: #60870a;
+}
+
+ul.menu {
+    list-style-type: none;
+    background-color: #60870a;
+    position: relative;
+    top: -10px;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    margin: 0;
+}
+
+nav ul.menu li a:hover {
+    color: #dd5607;
+}

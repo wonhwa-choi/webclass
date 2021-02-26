@@ -1,0 +1,260 @@
+@import url(/css/Typo_SsangmunDongB.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* 내비게이션 */
+
+a:link,
+a:hover,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #283744;
+}
+
+#top-header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+nav {
+    width: 80%;
+    position: relative;
+    font-family: 'Patua One', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+nav #menu_list {
+    display: none;
+}
+
+nav #nav-icon {
+    display: block;
+    /* line-height: 40px; */
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    /* margin: 50px auto; */
+    /* cursor: pointer; */
+    /* border: 1px solid white; */
+}
+
+#nav-icon span {
+    display: block;
+    /* position: absolute; */
+    margin-bottom: 5px;
+    /* border: 1px solid yellow; */
+    height: 7px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+}
+
+@media screen and (min-width:430px) {
+    nav #nav-icon {
+        display: none;
+    }
+    nav #menu_list {
+        display: flex;
+        align-items: left;
+    }
+    nav #menu_list ul {
+        width: 80%;
+        padding: 5px;
+        display: flex;
+        /* border: 1px solid yellow; */
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 10px; */
+    }
+}
+
+section .slider img {
+    width: 900px;
+    height: 400px;
+}
+
+
+/* 섹션 */
+
+section {
+    width: 100vw;
+    position: relative;
+}
+
+section:nth-child(odd) {
+    background-color: #f3f3f4;
+}
+
+.section-title {
+    margin: 30px auto 50px auto;
+}
+
+.section-title h3 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.wrapper {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: transparent;
+}
+
+@media screen and (min-width:764px) {
+    .wrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}
+
+
+/* 왜 코딩 교육? 영역 */
+
+.intro {
+    padding: 10px 20px;
+}
+
+.text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text h3 {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.img {
+    text-align: center;
+    display: none;
+}
+
+@media screen and (min-width:764px) {
+    .intro {
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+    }
+    .text {
+        flex: 2;
+    }
+    .img {
+        display: block;
+        flex: 1;
+    }
+    .img>img {
+        max-width: 250px;
+    }
+}
+
+
+/* 코딩 영역 */
+
+.about {
+    line-height: 1.8;
+    padding: 20px 50px;
+}
+
+.msg p {
+    color: #ff6600;
+    font-family: 'Nanum Myeongjo', 돋움;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.msg span {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.program-list {
+    padding: 20px 50px;
+}
+
+.program-list h4 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.program {
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+@media screen and (min-width:764px) {
+    .program-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .program {
+        flex-basis: 22%;
+    }
+}
+
+
+/* 푸터 */
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #34495e;
+}
+
+.footer-info {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact {
+    color: #fff;
+}
+
+.sns {
+    margin-top: 50px;
+}
+
+.sns a {
+    margin-right: 30px;
+}
+
+.sns a:last-child {
+    margin-right: 0;
+}
+
+@media screen and (min-width:764px) {
+    .footer-info {
+        max-width: 1300px;
+        display: flex;
+    }
+    .contact {
+        flex: 2;
+    }
+    .sns {
+        flex: 1;
+    }
+}
