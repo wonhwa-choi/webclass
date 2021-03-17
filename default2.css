@@ -1,0 +1,248 @@
+/* header footer 관리 */
+
+* {
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+
+/* mobile css */
+
+#wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#wrap section {
+    box-sizing: border-box;
+}
+
+.info_section {
+    order: 1;
+    width: 100%;
+    background: lightgreen;
+    border-bottom: 1px solid green;
+}
+
+.info_list {
+    display: flex;
+}
+
+.info_list li {
+    width: 25%;
+    text-align: center;
+}
+
+.info_list li a {
+    display: block;
+    padding: 15px 0;
+}
+
+.header {
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    order: 1;
+    width: 100%;
+    padding: 30px 0;
+    padding: 1.188rem 0;
+    font-size: 1.188rem;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgb(68, 90, 36);
+    text-shadow: 0px 1px 1px grey;
+}
+
+.nav {
+    order: 2;
+    width: 100%;
+}
+
+.gnb {
+    display: none;
+}
+
+.gnb li {
+    display: flex;
+    background: darkslategray;
+}
+
+.gnb li a {
+    width: 80%;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    text-indent: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gnb li span {
+    width: 20%;
+    text-indent: -9999px;
+    background: url(../images/s_images/sub_menu_toggle_btn.png) center center no-repeat;
+    cursor: pointer;
+}
+
+.menu_toggle_btn {
+    display: block;
+    background: url(../images/s_images/menu_toggle_btn.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.footer {
+    order: 10;
+    width: 100%;
+    background: darkslategrey;
+}
+
+.footer p {
+    padding: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+}
+
+
+/* tablet css */
+
+@media all and (min-width:768px) {
+    #wrap {
+        flex-flow: row wrap;
+    }
+    .header {
+        flex-direction: row;
+    }
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 15%;
+        padding: 0;
+    }
+    .logo a {
+        display: block;
+        padding: 25px;
+    }
+    .nav {
+        position: relative;
+        min-height: 80px;
+        background: rgb(68, 90, 36);
+    }
+    .gnb {
+        /* display: block; */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        z-index: 20;
+    }
+    .menu_toggle_btn {
+        z-index: 20;
+    }
+}
+
+
+/* window css */
+
+@media all and (min-width:960px) {
+    #wrap {
+        /* display: flex; */
+        /* flex-flow: row wrap; */
+        position: relative;
+        width: 90%;
+        /* margin: 0 auto; */
+    }
+    .info_section {
+        order: 0;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        z-index: 30;
+        width: auto;
+        border-bottom: 0;
+        background: none;
+    }
+    .info_list li {
+        width: auto;
+        margin-left: 15px;
+    }
+    .info_list li a {
+        padding: 0;
+    }
+    .header {
+        order: 1;
+        justify-content: flex-end;
+        position: static;
+    }
+    .logo {
+        width: 13%;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        position: static;
+        width: 87.5%;
+    }
+    .gnb {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: 100%;
+        text-shadow: 0px 1px 1px gray;
+    }
+    .gnb li {
+        display: block;
+        margin-left: 5%;
+        background: none;
+    }
+    .gnb li a {
+        width: auto;
+        padding: 0;
+        text-indent: 0;
+    }
+    .gnb li span {
+        display: none;
+    }
+    .menu_toggle_btn {
+        display: none;
+    }
+    .header h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 12.5%;
+        height: 142px;
+        background: burlywood;
+    }
+    .header nav {
+        width: 87.5%;
+        min-height: 80px;
+        background: burlywood;
+    }
+    .footer {
+        order: 9;
+        width: 100%;
+        height: 94px;
+        background: darkslategrey;
+    }
+}
